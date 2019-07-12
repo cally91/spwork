@@ -1,0 +1,37 @@
+spring에서 mydatis를 사용하여 dbms와 연동할떼
+pom.xml에 설정해야할 공통  dependency
+
+1. spring-jdbc
+<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-jdbc</artifactId>
+			<version>${org.springframework-version}</version>
+		</dependency>
+*주의상황 spring-jdbc는 반드시 spting관련 다른 dependency와 varsion을 일치시킨다
+그래서 버전 부분을 아래와 같이 설정*
+2.mydatis
+<dependency>
+			<groupId>org.mybatis</groupId>
+			<artifactId>mybatis</artifactId>
+			<version>3.5.1</version>
+		</dependency>
+		*버전에 관계없ㅇ디 사용하고자 하는 lid사용하면된다.
+		3.3.x하고 3.4.x대와는 mapper설정에서 다소 차이가있다
+3.mydatis-spring
+		<dependency>
+			<groupId>org.mybatis</groupId>
+			<artifactId>mybatis-spring</artifactId>
+			<version>2.0.1</version>
+		</dependency>
+4.commons-dbcp
+-apacke 제단에서 만든 datebase connection pool이다.
+-db pool이랑 db 연결을 위해서 몇개의 연결 통로를 미리 설정하고
+--java,server의 요청에따라 connection을 분배하여 효율을 높이는 기법
+<dependency>
+    <groupId>org.apache.commons</groupId>
+    <artifactId>commons-dbcp2</artifactId>
+    <version>2.6.0</version>
+</dependency>
+
+-참고상항 java 7이하에서는 commans-dbcp를 사용하고
+그 이후버전에서는 commane dbcp2을 사용하는것이좋다
