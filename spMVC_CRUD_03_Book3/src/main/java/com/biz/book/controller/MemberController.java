@@ -113,7 +113,5 @@ public class MemberController {
 		httpSession.setAttribute("USER", null);
 		return "home";
 	}
-
-	
 	
 }
