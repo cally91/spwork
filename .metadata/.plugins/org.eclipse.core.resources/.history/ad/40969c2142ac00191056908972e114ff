@@ -1,0 +1,11 @@
+package com.biz.lolist.Model;
+
+public class ProductVO {
+
+	private String p_code;
+	private String p_name;
+	private int p_iprice;
+	private int p_opruce;
+
+
+}

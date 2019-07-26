@@ -1,0 +1,18 @@
+package com.biz.lolist.Model;
+
+
+
+
+public class lolistVO {
+
+	 private long io_seq;	//NUMBER
+	 private String io_date;	//VARCHAR2(10)
+	 private String io_product;	//nVARCHAR2(50)
+	 private String io_comp;	//nVARCHAR2(50)
+	 private String io_com_ceo;//	nVARCHAR2(50)
+	 private String io_inout;//	nVARCHAR2(10)
+	 private int io_qty;	//NUMBER
+	 private int io_price;//	NUMBER
+	 private int io_total;	//NUMBER
+
+}

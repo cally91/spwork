@@ -1,0 +1,23 @@
+1563762146354	Delete element
+1563762298753	Rename resource 'inci'
+1563763676983	Move compilation unit
+1563766254242	Rename resource 'BODY'
+1563767750009	Rename resource 'appServlet'
+1563767791110	Delete element
+1563767792766	Delete element
+1563768070659	Delete element
+1563768213860	Move file
+1563771974299	Rename type 'ProduxtDao'
+1563773560428	Rename type 'Product'
+1563773565569	Move compilation units
+1563773896636	Rename package 'com.biz.lolist.Controller'
+1563773959413	Rename type 'lolistDao'
+1563775550092	Move compilation unit
+1563775562225	Rename type 'ProDuch'
+1563776236205	Rename package 'com.biz.lolist.Model'
+1563776313610	Rename package 'com.biz.lolist.mapper'
+1563776320319	Rename package 'com.biz.lolist.controller'
+1563776327039	Rename package 'com.biz.lolist.service'
+1563777010280	Move file
+1563777492532	Move file
+1563777504452	Rename resource 'produst_list.jsp'

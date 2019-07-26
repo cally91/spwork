@@ -1,0 +1,5 @@
+package com.biz.iolist.mapper;
+
+public class CompDao {
+
+}

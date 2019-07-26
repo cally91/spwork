@@ -1,0 +1,8 @@
+1563839644930	Move files
+1563840175727	Rename type 'BegunDao'
+1563851935370	Rename type 'VegunVO'
+1563851962861	Rename type 'VegunDao'
+1564012174785	Rename package 'com.biz.memo.controller'
+1564012181901	Rename package 'com.biz.memo.service'
+1564012189522	Rename package 'com.biz.memo.model'
+1564012197039	Rename package 'com.biz.memo.dao'

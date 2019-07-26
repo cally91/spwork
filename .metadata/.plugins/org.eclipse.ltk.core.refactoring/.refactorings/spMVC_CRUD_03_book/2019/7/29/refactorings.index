@@ -1,0 +1,29 @@
+1563164265211	Delete element
+1563164992520	Rename package 'com.biz.book.contr'
+1563164995748	Move compilation unit
+1563165012894	Rename package 'com.biz.book.controller'
+1563168614716	Rename package 'com.biz.book.Controller'
+1563168840520	Move file
+1563168932149	Copy folder
+1563170200492	Copy file
+1563170626255	Rename resource '01.book-info-index.html'
+1563170705071	Rename resource 'book-index.html'
+1563170737921	Rename resource 'book-info.html'
+1563170924781	Rename resource 'Static'
+1563171046780	Rename resource 'views'
+1563171143619	Rename resource 'include'
+1563171158071	Move file
+1563171247287	Rename resource 'inciude -head.jsp'
+1563171263615	Rename resource 'inciude -header.jsp'
+1563171523003	Rename resource 'view'
+1563172033965	Rename resource 'inciude -header.jspf'
+1563173838577	Rename resource '02.book-list.html'
+1563173917530	Delete element
+1563173938984	Rename resource '02.book-list.html'
+1563175015727	Copy file
+1563175030879	Rename resource 'book-login.jsp'
+1563175070445	Copy file
+1563177589381	Rename resource 'mybatis -context.xml'
+1563177687926	Rename resource 'mybatis-confing.xml'
+1563177996211	Rename package 'com.biz.book.setvice'
+1563178003655	Rename type 'BookSetvice'

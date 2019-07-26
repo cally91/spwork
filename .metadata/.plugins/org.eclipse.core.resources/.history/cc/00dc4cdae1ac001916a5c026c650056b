@@ -1,0 +1,9 @@
+package com.biz.iolist.Model;
+
+public class CompVO {
+	c_code
+	c_name
+	c_ceo
+	c_tel
+	c_addr
+}

@@ -1,0 +1,18 @@
+package com.biz.lolist.Model;
+
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
+
+@Getter
+@Setter
+@ToString
+public class ProductVO {
+
+	private String p_code;
+	private String p_name;
+	private int p_iprice;
+	private int p_opruce;
+
+
+}

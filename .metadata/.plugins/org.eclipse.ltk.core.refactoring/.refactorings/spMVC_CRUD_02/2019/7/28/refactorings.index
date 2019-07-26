@@ -1,0 +1,7 @@
+1562911902766	Rename type 'bookVO'
+1562911913488	Rename type 'bookDao'
+1562913168327	Rename type 'bookcontroller'
+1562913174600	Rename package 'com.biz.book.controller'
+1562913349495	Rename resource 'book_List.jsp'
+1562913491118	Rename package 'com.biz.book.Controller'
+1562913585249	Move compilation unit
