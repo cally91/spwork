@@ -1,5 +1,0 @@
-package com.biz.bbs.mapper;
-
-public interface FileDao {
-
-}

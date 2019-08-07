@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aop-reference-model>
-<aop-project name="SpMVC_CRUD_04_Memo3"/>
-<aop-project name="SpMVC_CRUD_06_DBS2"/>
+<aop-project name="SVS"/>
+<aop-project name="SpMVC_CRUD_06_DBS3_TagFileUp"/>
+<aop-project name="SpMVC_CRUD_06_DBS4"/>
+<aop-project name="SpPro"/>
 </aop-reference-model>

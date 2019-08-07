@@ -1,6 +1,5 @@
 package com.biz.book.service;
 
-import java.awt.print.Book;
 import java.util.List;
 
 import org.apache.ibatis.session.SqlSession;
@@ -23,29 +22,27 @@ public class BookService {
 	}
 
 	public int insert(BookVO bookVO) {
-		BookDao bDao =sqlSession.getMapper(BookDao.class);
-		int ret=bDao.insert(bookVO);
+		BookDao bDao = sqlSession.getMapper(BookDao.class);
+		int ret = bDao.insert(bookVO);
 		return ret;
 	}
 
 	public BookVO findBySeq(long b_seq) {
-		BookDao bDao=sqlSession.getMapper(BookDao.class);
-		BookVO bookVO=bDao.findBySeq(b_seq);
+		BookDao bDao = sqlSession.getMapper(BookDao.class);
+		BookVO bookVO = bDao.findBySeq(b_seq);
 		return bookVO;
 	}
 
 	public int delete(long b_seq) {
-		BookDao bDao= sqlSession.getMapper(BookDao.class);
-		int ret= bDao.delete(b_seq);
+		BookDao bDao = sqlSession.getMapper(BookDao.class);
+		int ret = bDao.delete(b_seq);
 		return ret;
 	}
 
 	public int update(BookVO bookVO) {
-		BookDao bDao =sqlSession.getMapper(BookDao.class);
-		int ret=bDao.update(bookVO);
-		return 0;
+		BookDao bDao = sqlSession.getMapper(BookDao.class);
+		int ret = bDao.update(bookVO);
+		return ret;
 	}
-
-	
 
 }

@@ -1,5 +1,4 @@
 @charset "UTF-8";
-
 	fieldset {
 		width:60%;
 		margin:10px auto;
@@ -21,17 +20,17 @@
 		width:100px;
 		text-align: right;
 		margin: 8px;
-		padding: 5px;
+		padding:5px;
 		
 		font-weight: bold;
-		color: blue;
+		color:blue;
 	}
 	div.in-box input {
 		width : 60%;
 		border : 1px solid red;
 		border-radius: 4px;
-		padding: 5px;
-		margin: 3px;
+		padding:5px;
+		margin:3px;
 	}
 
 	input:focus {

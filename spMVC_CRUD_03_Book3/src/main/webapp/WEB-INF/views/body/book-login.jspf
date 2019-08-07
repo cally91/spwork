@@ -4,7 +4,7 @@
 <c:set var="rootPath" value="${pageContext.request.contextPath}" />
 
 <link rel="stylesheet" type="text/css" 
-		href="${rootPath}/css/book-login.css?var=20190716">
+		href="${rootPath}/css/book-login.css?ver=20190716">
 
 <article class="login-body">
 	<form class="login-form" method="POST">

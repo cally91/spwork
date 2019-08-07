@@ -13,14 +13,13 @@
 		<li><a href="<c:url value='/book-view'/>" >도서정보보기</a></li>
 		
 		<c:if test="${not empty USER}">
-		<li><a href="${rootPath}/logout">${USER.m_email} 님 환영합니다</a></li>
+			<li><a href="${rootPath}/logout">${USER.m_email} 님 환영합니다</a></li>
 		</c:if>
 		
 		<c:if test="${empty USER}">
-		<li><a href="${rootPath}/login">로그인</a></li>
-		<li><a href="${rootPath}/join">회원가입</a></li>
+			<li><a href="${rootPath}/login">로그인</a></li>
+			<li><a href="${rootPath}/join">회원가입</a></li>
 		</c:if>
-		
-		
-		</ul>
+	
+	</ul>
 </nav>

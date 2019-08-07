@@ -4,9 +4,11 @@
   "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
 	<typeAliases>
+	
 		<typeAlias alias="BookVO" 
 				type="com.biz.book.model.BookVO" />
-				
-				<typeAlias alias="MVO" type="com.biz.book.model.MemberVO" />
+		<typeAlias alias="MVO" 
+				type="com.biz.book.model.MemberVO"/>
+	
 	</typeAliases>
 </configuration>

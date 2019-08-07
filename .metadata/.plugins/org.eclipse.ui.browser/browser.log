@@ -133,3 +133,29 @@
 7월 26, 2019 13:32:54.47 [860:4796:0726/133254.472:ERROR:browser_process_sub_thread.cc(221)] Waited 8 ms for network service
 7월 26, 2019 13:50:19.90 [3764:2568:0726/135019.907:ERROR:browser_process_sub_thread.cc(221)] Waited 20 ms for network service
 7월 26, 2019 14:38:15.88 [3504:3292:0726/143815.889:ERROR:browser_process_sub_thread.cc(221)] Waited 23 ms for network service
+
+8월 05, 2019 08:52:57.88 NEW SESSION
+8월 05, 2019 08:52:57.88 [2444:1248:0805/085257.881:ERROR:browser_process_sub_thread.cc(221)] Waited 5 ms for network service
+8월 05, 2019 09:09:39.94 [4652:4620:0805/090939.943:ERROR:browser_process_sub_thread.cc(221)] Waited 12 ms for network service
+8월 05, 2019 10:33:05.50 [1372:4112:0805/103305.506:ERROR:browser_process_sub_thread.cc(221)] Waited 26 ms for network service
+8월 05, 2019 11:18:45.00 [4312:4696:0805/111845.007:ERROR:browser_process_sub_thread.cc(221)] Waited 98 ms for network service
+8월 05, 2019 12:26:01.51 [4264:4328:0805/122601.515:ERROR:browser_process_sub_thread.cc(221)] Waited 3 ms for network service
+
+8월 05, 2019 12:29:16.75 NEW SESSION
+8월 05, 2019 12:29:16.75 [5008:2796:0805/122916.753:ERROR:browser_process_sub_thread.cc(221)] Waited 11 ms for network service
+8월 05, 2019 12:51:36.88 [692:4848:0805/125136.883:ERROR:browser_process_sub_thread.cc(221)] Waited 3 ms for network service
+8월 05, 2019 12:52:19.49 [3784:2492:0805/125219.493:ERROR:browser_process_sub_thread.cc(221)] Waited 7 ms for network service
+8월 05, 2019 14:52:35.12 [4848:1424:0805/145235.129:ERROR:browser_process_sub_thread.cc(221)] Waited 2 ms for network service
+8월 05, 2019 16:50:29.57 [1832:1108:0805/165029.575:ERROR:browser_process_sub_thread.cc(221)] Waited 33 ms for network service
+8월 05, 2019 17:00:20.10 [3240:4580:0805/170020.107:ERROR:browser_process_sub_thread.cc(221)] Waited 31 ms for network service
+
+8월 06, 2019 13:02:01.93 NEW SESSION
+8월 06, 2019 13:02:01.93 [3344:1360:0806/130201.929:ERROR:browser_process_sub_thread.cc(221)] Waited 8 ms for network service
+8월 06, 2019 13:26:14.04 [5168:5488:0806/132614.048:ERROR:browser_process_sub_thread.cc(221)] Waited 6 ms for network service
+8월 06, 2019 17:01:12.45 [5796:4536:0806/170112.456:ERROR:browser_process_sub_thread.cc(221)] Waited 15 ms for network service
+8월 06, 2019 17:03:46.52 [5972:4980:0806/170346.524:ERROR:browser_process_sub_thread.cc(221)] Waited 4 ms for network service
+8월 06, 2019 17:37:47.33 [3708:5256:0806/173747.335:ERROR:browser_process_sub_thread.cc(221)] Waited 4 ms for network service
+8월 06, 2019 18:02:50.36 [5988:2396:0806/180250.369:ERROR:browser_process_sub_thread.cc(221)] Waited 4 ms for network service
+
+8월 07, 2019 09:00:49.76 NEW SESSION
+8월 07, 2019 09:00:49.76 [1584:3112:0807/090049.763:ERROR:browser_process_sub_thread.cc(221)] Waited 4 ms for network service
