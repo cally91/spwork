@@ -6,8 +6,11 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="MAIN_SEQ "/>
+		<item key="selection" value="display"/>
 		<list key="findhistory">
+			<item value="display"/>
+			<item value="NaverClientSecret"/>
+			<item value="NaverClientId"/>
 			<item value="MAIN_SEQ "/>
 			<item value="파일개수"/>
 			<item value="비밀번호"/>

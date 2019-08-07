@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aop-reference-model>
 <aop-project name="SVS"/>
-<aop-project name="SpMVC_CRUD_06_DBS3_TagFileUp"/>
+<aop-project name="SpMvc_API_Naver"/>
 <aop-project name="SpMVC_CRUD_06_DBS4"/>
+<aop-project name="SpMVC_CRUD_06_DBS6_ajaxFileUp2"/>
 <aop-project name="SpPro"/>
 </aop-reference-model>

@@ -10,6 +10,8 @@ div.bz-card {
 	height: 300px;
 	margin-bottom: 20px;
 	border-radius: 10px;
+	
+	 
 }
 
 div.bz-card img {
@@ -20,6 +22,7 @@ div.bz-card img {
 div.bz-card-content {
 	padding: 0.0rem 29px;
 	text-align: center;
+
 	font-weight: bold;
 	color: blue;
 	text-shadow: 0 0 2px #15ea6a, 0 0 25px #3e3ac5, 0 0 5px darkblue;
