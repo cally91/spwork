@@ -6,8 +6,11 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="display"/>
+		<item key="selection" value="Long"/>
 		<list key="findhistory">
+			<item value="Long"/>
+			<item value="44"/>
+			<item value="INSERT INTO"/>
 			<item value="display"/>
 			<item value="NaverClientSecret"/>
 			<item value="NaverClientId"/>

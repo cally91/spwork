@@ -156,17 +156,6 @@ public class BBsController {
 
 	}
 
-	@ResponseBody
-	@RequestMapping(value = "/file_delete")
-	public String file_delete(long file_seq) {
-
-		boolean okDelete = aFService.file_delete(file_seq);
-		if (okDelete)
-			return "OK";
-		else
-			return "FAIL";
-
-	}
 
 	/*
 	 * PathVariable GET 방식으로 서버에 데이터를 보낼때 ?변수=값 형식으로 많이 사용을 한다. 그런데 이 방식에 보안이 취약점이
@@ -227,20 +216,34 @@ public class BBsController {
 
 	}
 	
-	@RequestMapping(value = "/delete", method = RequestMethod.GET)
-	public String delete(@RequestParam long bbs_seq, Model model,HttpSession httpSession) {
-		MemberVO memberVO =(MemberVO)httpSession.getAttribute("LOGIN");
-		if(memberVO==null) {
-			model.addAttribute("LOGIN_MSG", "LOGIN");
-			return"redirect:/member/login";
-		}
-		BBsDto bbsDto=bbsService.getContent(bbs_seq);
-		if (!memberVO.getM_userid().equalsIgnoreCase(bbsDto.getBbs_auth())) {
-			model.addAttribute("LOGIN_MSG", "DETELE");
-			return"redirect:/member/login";
-		}
-		int ret = bbsService.delete(bbs_seq);
-		return "redirect:/bbs/list";
+	
+	/*
+	 * 게시글을 삭제하면
+	 * 1. 첨부파일 확인 >> 첨부 파일 삭제
+	 * 2. 첨부파일 table 정보 삭제
+	 * 3게시글 삭제
+	 */
+	@RequestMapping(value = "/delete/{bbs_seq}", method = RequestMethod.GET)
+	public String delete(@PathVariable long bbs_seq, Model model,HttpSession httpSession) {
+		
+		
+		
+		int ret =bbsService.delete(bbs_seq);
+		return"redirect:/bbs/list";
+//		MemberVO memberVO =(MemberVO)httpSession.getAttribute("LOGIN");
+//		if(memberVO==null) {
+//			model.addAttribute("LOGIN_MSG", "LOGIN");
+//
+//		return"redirect:/member/login";
+//	}
+//		
+//		BBsDto bbsDto=bbsService.getContent(bbs_seq);
+//		if (!memberVO.getM_userid().equalsIgnoreCase(bbsDto.getBbs_auth())) {
+//			model.addAttribute("LOGIN_MSG", "DETELE");
+//			return"redirect:/member/login";
+//		}
+//		int ret = bbsService.delete(bbs_seq);
+//		return "redirect:/bbs/list";
 
 	}
 

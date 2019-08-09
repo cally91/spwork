@@ -169,3 +169,33 @@
 8월 07, 2019 15:21:34.50 [5848:5304:0807/152134.509:ERROR:browser_process_sub_thread.cc(221)] Waited 18 ms for network service
 8월 07, 2019 16:36:12.26 [4796:4772:0807/163612.260:ERROR:browser_process_sub_thread.cc(221)] Waited 11 ms for network service
 8월 07, 2019 16:52:38.24 [2240:4928:0807/165238.249:ERROR:textfield.cc(1758)] NOT IMPLEMENTED
+
+8월 08, 2019 10:38:52.32 NEW SESSION
+8월 08, 2019 10:38:52.32 [760:4300:0808/103852.320:ERROR:browser_process_sub_thread.cc(221)] Waited 3 ms for network service
+8월 08, 2019 10:39:07.36 [1164:3404:0808/103907.360:ERROR:browser_process_sub_thread.cc(221)] Waited 16 ms for network service
+8월 08, 2019 10:41:00.33 [3824:4020:0808/104100.330:ERROR:browser_process_sub_thread.cc(221)] Waited 4 ms for network service
+8월 08, 2019 10:41:16.51 [2524:4508:0808/104116.516:ERROR:browser_process_sub_thread.cc(221)] Waited 11 ms for network service
+8월 08, 2019 10:57:22.66 [4768:1252:0808/105722.661:ERROR:textfield.cc(1758)] NOT IMPLEMENTED
+8월 08, 2019 10:57:47.39 [4768:4884:0808/105747.396:ERROR:browser_process_sub_thread.cc(221)] Waited 15 ms for network service
+8월 08, 2019 13:22:00.77 [4228:5216:0808/132200.776:ERROR:platform_sensor_reader_win.cc(244)] NOT IMPLEMENTED
+8월 08, 2019 13:31:31.25 [4228:1664:0808/133131.252:ERROR:textfield.cc(1758)] NOT IMPLEMENTED
+8월 08, 2019 14:51:11.11 [4228:6464:0808/145111.111:ERROR:browser_process_sub_thread.cc(221)] Waited 36 ms for network service
+8월 08, 2019 15:09:29.18 [1028:2612:0808/150929.182:ERROR:browser_process_sub_thread.cc(221)] Waited 14 ms for network service
+
+8월 09, 2019 08:57:04.42 NEW SESSION
+8월 09, 2019 08:57:04.42 [1436:3224:0809/085704.419:ERROR:browser_process_sub_thread.cc(203)] Waited 21 ms for network service
+
+8월 09, 2019 10:46:39.13 NEW SESSION
+8월 09, 2019 10:46:39.13 [4620:2408:0809/104639.131:ERROR:browser_process_sub_thread.cc(203)] Waited 71 ms for network service
+8월 09, 2019 10:49:31.67 [4132:4256:0809/104931.676:ERROR:browser_process_sub_thread.cc(203)] Waited 9 ms for network service
+8월 09, 2019 10:50:26.19 [3840:2552:0809/105026.192:ERROR:browser_process_sub_thread.cc(203)] Waited 16 ms for network service
+8월 09, 2019 10:51:42.23 [4204:2604:0809/105142.239:ERROR:browser_process_sub_thread.cc(203)] Waited 35 ms for network service
+
+8월 09, 2019 11:33:43.72 NEW SESSION
+8월 09, 2019 11:33:43.72 [3760:1144:0809/113343.725:ERROR:component_installer.cc(320)] Failed to read manifest or verify installation for CRLSet (C:\Users\USER\AppData\Local\Google\Chrome\User Data\CertificateRevocation\5320).: 지정된 파일을 찾을 수 없습니다. (0x2)
+8월 09, 2019 11:49:06.89 [3760:3564:0809/114906.892:ERROR:browser_process_sub_thread.cc(203)] Waited 30 ms for network service
+8월 09, 2019 11:49:15.72 [2984:4528:0809/114915.722:ERROR:browser_process_sub_thread.cc(203)] Waited 65 ms for network service
+8월 09, 2019 11:49:21.41 [4092:3200:0809/114921.418:ERROR:browser_process_sub_thread.cc(203)] Waited 13 ms for network service
+8월 09, 2019 11:49:49.44 [4656:4028:0809/114949.444:ERROR:browser_process_sub_thread.cc(203)] Waited 67 ms for network service
+8월 09, 2019 12:25:44.07 [2636:2408:0809/122544.077:ERROR:browser_process_sub_thread.cc(203)] Waited 73 ms for network service
+8월 09, 2019 12:36:10.75 [1644:2588:0809/123610.752:ERROR:browser_process_sub_thread.cc(203)] Waited 62 ms for network service

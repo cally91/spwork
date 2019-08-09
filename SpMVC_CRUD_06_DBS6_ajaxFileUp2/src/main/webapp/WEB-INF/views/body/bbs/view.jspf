@@ -67,7 +67,7 @@ $(function(){
 	
 	$("#btn-delete").click(function(){
 		if(confirm("정말 삭제 할까요?")) {
-			location.replace('${rootPath}/bbs/delete?bbs_seq=${BBS.bbs_seq}')	
+			location.replace('${rootPath}/bbs/delete/${BBS.bbs_seq}')	
 		}
 	})
 	

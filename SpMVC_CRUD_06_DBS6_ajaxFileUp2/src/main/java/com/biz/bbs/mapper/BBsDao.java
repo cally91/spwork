@@ -56,7 +56,7 @@ public interface BBsDao {
 	@UpdateProvider(type = BBsSQL.class, method = "bbs_update_sql")
 	public int update(BBsReqDto bbsReqDto);
 
-	@Delete(" DELETE FROM tbl_bbs WHERE  bbs_seq = #{bbs_seq} ")
+	@Delete(" DELETE FROM tbl_bbs WHERE  bbs_seq = #{bbs_seq} ") 
 	public int delete(long bbs_seq);
 
 }

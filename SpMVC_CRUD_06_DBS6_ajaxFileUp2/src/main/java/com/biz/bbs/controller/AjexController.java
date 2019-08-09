@@ -19,14 +19,25 @@ public class AjexController {
 
 	@Autowired
 	AjaxFileService aFService;
-	
+
 	@RequestMapping(value = "/files_up", method = RequestMethod.POST)
 	public List<FileVO> files_up(MultipartHttpServletRequest files) {
 
-		
 		List<FileVO> fileVOList = aFService.uploads(files);
-		
+
 		return fileVOList;
 
 	}
+
+	@RequestMapping(value = "/file_delete")
+	public String file_delete(long file_seq) {
+
+		boolean okDelete = aFService.file_delete(file_seq);
+		if (okDelete)
+			return "OK";
+		else
+			return "FAIL";
+
+	}
+
 }

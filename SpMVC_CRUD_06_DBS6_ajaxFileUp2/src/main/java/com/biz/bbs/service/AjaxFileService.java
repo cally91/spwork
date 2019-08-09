@@ -8,6 +8,7 @@ import java.util.UUID;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.multipart.MultipartHttpServletRequest;
 
@@ -21,13 +22,11 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 @Service
 public class AjaxFileService {
-	
+
 	@Autowired
 	FileDao fDao;
 	/*
-	 * 변수에 final키워드가 붙으면
-	 * 이 변수의 값을 변경할 수가없다.
-	 * 상수
+	 * 변수에 final키워드가 붙으면 이 변수의 값을 변경할 수가없다. 상수
 	 */
 	private final String upLoadFolder = "c:/bizwork/upload/";
 
@@ -39,18 +38,15 @@ public class AjaxFileService {
 		List<FileVO> fileVOList = new ArrayList<FileVO>();
 
 		for (MultipartFile file : fileList) {
-			
-			String saveName =this.upLoad(file);
-			
+
+			String saveName = this.upLoad(file);
 
 			log.debug("FILENAME" + file.getOriginalFilename());
-			fileVOList.add(
-					FileVO.builder()
-					.file_origin_name(file.getOriginalFilename())
-					.file_name(saveName).build());
+			fileVOList.add(FileVO.builder().file_origin_name(file.getOriginalFilename()).file_name(saveName).build());
 		}
 		return fileVOList;
 	}
+
 	/*
 	 * 한개의 파일을 업로드하는 메소드
 	 */
@@ -84,6 +80,7 @@ public class AjaxFileService {
 		}
 		return saveName;
 	}
+
 	public boolean file_delete(long file_seq) {
 
 		// 1. 파일 정보 추출
@@ -107,21 +104,48 @@ public class AjaxFileService {
 		return false;
 
 	}
+
+	/*
+	 * mybatis에서 transaction 방식으로 다중쿼리를 실행하라.
+	 */
+	@Transactional
 	public int insert(BBsReqDto bbsReqDto) {
-List<String> bbs_files= bbsReqDto.getBbs_files();
-for(String file_name :bbs_files) {
-	
-	//1. 각항목을 변수에 담고 최종적으로 insert을 수행하기
-	long bbs_seq= bbsReqDto.getBbs_seq();
-	//uuid를 제거하고origin 이름을 추출 
-	String file_origin_name = file_name.substring(37);
-	
-	FileVO fVO =FileVO.builder()
-			.file_name(file_name)
-			.file_origin_name(file_origin_name)
-			.file_bbs_seq(bbs_seq).build();
+		List<String> bbs_files = bbsReqDto.getBbs_files();
+		/*
+		 * 파일을 drag upload를 하지않고 글저장 버튼을 클릭하면
+		 * bbs_files에 아무런 값이 없어서 아래코드가 오휴를
+		 * 일으킨다
+		 * 이때 bbs_files가 없으면 코드를 중단하고록
+		 */
+		if (bbs_files ==null)return -1;
+		for (String file_name : bbs_files) {
+
+			// 1. 각항목을 변수에 담고 최종적으로 insert을 수행하기
+			long bbs_seq = bbsReqDto.getBbs_seq();
+			// uuid를 제거하고origin 이름을 추출
+			String file_origin_name = file_name.substring(37);
+
+			FileVO fVO = FileVO.builder().file_name(file_name).file_origin_name(file_origin_name).file_bbs_seq(bbs_seq)
+					.build();
 			fDao.insert(fVO);
-}
+		}
 		return 0;
+	}
+
+	/*
+	 * 첨부파일 삭제절차
+	 * 1. tbl_bbs_file에서 첨부파일 목록 추출
+	 * 2. 해당하는 실제 파일을 삭제
+	 * 3. table에 해당 정보 삭제
+	 */
+	public int files_delete(long bbs_seq) {
+		
+		List<FileVO> fileList =fDao.findbbsSeq(bbs_seq);
+		for(FileVO fileVO :fileList) {
+			File delFile = new File(upLoadFolder,fileVO.getFile_name());
+			if(delFile.exists()) delFile.delete();
+		}
+		int ret= fDao.deletes(bbs_seq);
+		return ret;
 	}
 }
